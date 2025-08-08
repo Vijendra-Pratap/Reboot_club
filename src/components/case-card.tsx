@@ -1,7 +1,6 @@
 'use client';
 
 import type { Case } from '@/lib/data';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
@@ -13,25 +12,14 @@ interface CaseCardProps {
 }
 
 export function CaseCard({ caseData }: CaseCardProps) {
-  const { id, name, condition, raised, goal, imageUrl, dataAiHint, location } = caseData;
+  const { id, name, condition, raised, goal, location } = caseData;
   const progress = Math.round((raised / goal) * 100);
 
   return (
     <Card className="flex flex-col h-full overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl">
-      <CardHeader className="p-0">
-        <div className="relative h-48 w-full">
-          <Image
-            src={imageUrl}
-            alt={`Image for ${name}'s case`}
-            fill
-            className="object-cover"
-            data-ai-hint={dataAiHint}
-          />
-        </div>
-        <div className="p-4">
-          <Badge variant="secondary" className="mb-2">{location}</Badge>
-          <CardTitle className="font-headline text-xl">{condition}</CardTitle>
-        </div>
+      <CardHeader className="p-4">
+        <Badge variant="secondary" className="mb-2 w-fit">{location}</Badge>
+        <CardTitle className="font-headline text-xl">{condition}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow p-4 pt-0">
         <p className="text-muted-foreground text-sm mb-4">For {name}</p>

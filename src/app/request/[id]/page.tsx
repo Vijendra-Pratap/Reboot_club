@@ -1,6 +1,5 @@
 import { cases } from '@/lib/data';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import {
   Card,
   CardContent,
@@ -28,15 +27,6 @@ export default function RequestDetailPage({ params }: { params: { id: string } }
       <div className="grid md:grid-cols-3 gap-8">
         <div className="md:col-span-2">
           <Card className="overflow-hidden">
-            <div className="relative w-full h-64 md:h-96">
-                <Image
-                    src={caseData.imageUrl}
-                    alt={caseData.name}
-                    fill
-                    className="object-cover bg-muted"
-                    data-ai-hint={caseData.dataAiHint}
-                />
-            </div>
             <CardHeader>
               <Badge variant="secondary" className="w-fit mb-2">{caseData.condition}</Badge>
               <CardTitle className="text-3xl md:text-4xl font-headline">
