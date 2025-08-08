@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { HeartHandshake } from 'lucide-react';
+import { Logo } from '@/components/logo';
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <div className="flex items-center space-x-2 mb-6 md:mb-0">
-            <HeartHandshake className="h-6 w-6 text-primary" />
+            <Logo className="h-6 w-6 text-primary" />
             <span className="font-bold font-headline text-lg">AidLink</span>
           </div>
           <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground mb-6 md:mb-0">
