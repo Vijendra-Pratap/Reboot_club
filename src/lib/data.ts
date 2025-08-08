@@ -19,7 +19,7 @@ export type Case = {
       location: 'New York, NY',
       goal: 50000,
       raised: 22500,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=400&fit=crop',
       dataAiHint: 'woman portrait',
     },
     {
@@ -30,7 +30,7 @@ export type Case = {
       location: 'Chicago, IL',
       goal: 75000,
       raised: 15000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1526382925646-27b5eb867962?w=600&h=400&fit=crop',
       dataAiHint: 'elderly man',
     },
     {
@@ -41,7 +41,7 @@ export type Case = {
       location: 'Los Angeles, CA',
       goal: 30000,
       raised: 25000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&h=400&fit=crop',
       dataAiHint: 'young student',
     },
     {
@@ -52,7 +52,7 @@ export type Case = {
       location: 'Houston, TX',
       goal: 120000,
       raised: 95000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1546015720-6f85e0c4542d?w=600&h=400&fit=crop',
       dataAiHint: 'newborn baby',
     },
      {
@@ -63,7 +63,7 @@ export type Case = {
       location: 'Phoenix, AZ',
       goal: 60000,
       raised: 30000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1573166953820-3c6c4c1a35a2?w=600&h=400&fit=crop',
       dataAiHint: 'male teacher',
     },
     {
@@ -74,7 +74,7 @@ export type Case = {
       location: 'Miami, FL',
       goal: 25000,
       raised: 5000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1502423429699-34763948a0a3?w=600&h=400&fit=crop',
       dataAiHint: 'female artist',
     },
     {
@@ -85,7 +85,7 @@ export type Case = {
       location: 'Denver, CO',
       goal: 18000,
       raised: 17500,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1611624548179-c5a8a1834927?w=600&h=400&fit=crop',
       dataAiHint: 'military veteran',
     },
     {
@@ -96,7 +96,7 @@ export type Case = {
       location: 'Seattle, WA',
       goal: 45000,
       raised: 11000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1519766369419-e3ab2bde3553?w=600&h=400&fit=crop',
       dataAiHint: 'young girl',
     },
   ];
