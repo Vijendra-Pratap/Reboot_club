@@ -30,7 +30,7 @@ export type Case = {
       location: 'Chicago, IL',
       goal: 75000,
       raised: 15000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1581093452839-a781a5f64344?w=600&h=400&fit=crop',
       dataAiHint: 'heart surgery'
     },
     {
@@ -41,7 +41,7 @@ export type Case = {
       location: 'Los Angeles, CA',
       goal: 30000,
       raised: 25000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&h=400&fit=crop',
       dataAiHint: 'accident recovery'
     },
     {
@@ -52,7 +52,7 @@ export type Case = {
       location: 'Houston, TX',
       goal: 120000,
       raised: 95000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1546015720-6f85e0c4542d?w=600&h=400&fit=crop',
       dataAiHint: 'newborn baby'
     },
      {
@@ -63,7 +63,7 @@ export type Case = {
       location: 'Phoenix, AZ',
       goal: 60000,
       raised: 30000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1622253692010-33352f4568d2?w=600&h=400&fit=crop',
       dataAiHint: 'kidney transplant'
     },
     {
@@ -74,7 +74,7 @@ export type Case = {
       location: 'Miami, FL',
       goal: 25000,
       raised: 5000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1599493356221-a39fac742f4c?w=600&h=400&fit=crop',
       dataAiHint: 'autoimmune disease'
     },
     {
@@ -85,7 +85,7 @@ export type Case = {
       location: 'Denver, CO',
       goal: 18000,
       raised: 17500,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1519766369419-e3ab2bde3553?w=600&h=400&fit=crop',
       dataAiHint: 'prosthetic limb'
     },
     {
@@ -96,7 +96,7 @@ export type Case = {
       location: 'Seattle, WA',
       goal: 45000,
       raised: 11000,
-      imageUrl: 'https://placehold.co/600x400.png',
+      imageUrl: 'https://images.unsplash.com/photo-1579684385127-6ab18a59f598?w=600&h=400&fit=crop',
       dataAiHint: 'spinal surgery'
     },
   ];
