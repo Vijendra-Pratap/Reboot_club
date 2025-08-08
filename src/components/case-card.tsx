@@ -23,8 +23,8 @@ export function CaseCard({ caseData }: CaseCardProps) {
           <Image
             src={imageUrl}
             alt={`Image for ${name}'s case`}
-            layout="fill"
-            objectFit="cover"
+            fill
+            className="object-cover"
             data-ai-hint={dataAiHint}
           />
         </div>

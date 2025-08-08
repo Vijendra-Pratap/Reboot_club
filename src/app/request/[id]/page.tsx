@@ -32,9 +32,8 @@ export default function RequestDetailPage({ params }: { params: { id: string } }
                 <Image
                     src={caseData.imageUrl}
                     alt={caseData.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="bg-muted"
+                    fill
+                    className="object-cover bg-muted"
                     data-ai-hint={caseData.dataAiHint}
                 />
             </div>
