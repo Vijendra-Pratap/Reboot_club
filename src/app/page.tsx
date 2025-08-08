@@ -19,7 +19,7 @@ export default function Home() {
                     Your Compassion, Their Lifeline
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    AidLink connects you with individuals in urgent need of medical assistance. Your contribution can change a life.
+                    Join a community of kindness. Your contribution, no matter the size, provides hope and healing to those in critical need.
                   </p>
                 </div>
               </div>

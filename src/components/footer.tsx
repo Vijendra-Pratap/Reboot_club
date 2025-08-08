@@ -19,7 +19,7 @@ export function Footer() {
         </div>
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} AidLink. All rights reserved.</p>
-          <p className="mt-1">A platform for compassionate giving.</p>
+          <p className="mt-2 font-semibold">Together, we can turn compassion into a cure.</p>
         </div>
       </div>
     </footer>

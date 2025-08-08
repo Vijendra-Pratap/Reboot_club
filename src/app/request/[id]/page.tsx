@@ -78,8 +78,8 @@ export default function RequestDetailPage({ params }: { params: { id: string } }
 
             <Card className="bg-accent/10 border-accent">
                 <CardHeader>
-                    <CardTitle className="font-headline text-2xl text-accent-foreground">Make a Difference</CardTitle>
-                    <CardDescription>Your contribution can change a life today.</CardDescription>
+                    <CardTitle className="font-headline text-2xl text-accent-foreground">Be a Beacon of Hope</CardTitle>
+                    <CardDescription>Your gift, no matter the size, brings them one step closer to recovery. Join us in making a difference.</CardDescription>
                 </CardHeader>
                 <CardContent>
                      <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-lg py-6">
