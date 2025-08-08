@@ -19,7 +19,7 @@ export type Case = {
       location: 'New York, NY',
       goal: 50000,
       raised: 22500,
-      imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba9996a?w=600&h=400&fit=crop',
+      imageUrl: 'https://images.unsplash.com/photo-1578496479533-324741678622?w=600&h=400&fit=crop',
       dataAiHint: 'medical consultation',
     },
     {
@@ -96,7 +96,7 @@ export type Case = {
       location: 'Seattle, WA',
       goal: 45000,
       raised: 11000,
-      imageUrl: 'https://images.unsplash.com/photo-1579684385127-6ab18a59f598?w=600&h=400&fit=crop',
+      imageUrl: 'https://images.unsplash.com/photo-1628771065518-1d4c382a3c75?w=600&h=400&fit=crop',
       dataAiHint: 'spinal surgery'
     },
   ];
