@@ -30,6 +30,8 @@ export type Case = {
       location: 'Chicago, IL',
       goal: 75000,
       raised: 15000,
+      imageUrl: 'https://placehold.co/600x400.png',
+      dataAiHint: 'heart surgery'
     },
     {
       id: '3',
@@ -39,6 +41,8 @@ export type Case = {
       location: 'Los Angeles, CA',
       goal: 30000,
       raised: 25000,
+      imageUrl: 'https://placehold.co/600x400.png',
+      dataAiHint: 'accident recovery'
     },
     {
       id: '4',
@@ -48,6 +52,8 @@ export type Case = {
       location: 'Houston, TX',
       goal: 120000,
       raised: 95000,
+      imageUrl: 'https://placehold.co/600x400.png',
+      dataAiHint: 'newborn baby'
     },
      {
       id: '5',
@@ -57,6 +63,8 @@ export type Case = {
       location: 'Phoenix, AZ',
       goal: 60000,
       raised: 30000,
+      imageUrl: 'https://placehold.co/600x400.png',
+      dataAiHint: 'kidney transplant'
     },
     {
       id: '6',
@@ -66,6 +74,8 @@ export type Case = {
       location: 'Miami, FL',
       goal: 25000,
       raised: 5000,
+      imageUrl: 'https://placehold.co/600x400.png',
+      dataAiHint: 'autoimmune disease'
     },
     {
       id: '7',
@@ -75,6 +85,8 @@ export type Case = {
       location: 'Denver, CO',
       goal: 18000,
       raised: 17500,
+      imageUrl: 'https://placehold.co/600x400.png',
+      dataAiHint: 'prosthetic limb'
     },
     {
       id: '8',
@@ -84,5 +96,7 @@ export type Case = {
       location: 'Seattle, WA',
       goal: 45000,
       raised: 11000,
+      imageUrl: 'https://placehold.co/600x400.png',
+      dataAiHint: 'spinal surgery'
     },
   ];
