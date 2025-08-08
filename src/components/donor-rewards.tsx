@@ -28,7 +28,7 @@ export function DonorRewards() {
             Rewarding Our Heroes
           </h2>
           <p className="max-w-[700px] mx-auto text-muted-foreground md:text-lg">
-            We cherish our dedicated donors. Our rewards program is a small way of saying thank you for your incredible support.
+            We cherish our dedicated donors. Our rewards program is a small way of saying thank you for your incredible support. Each tier you unlock represents a new level of impact and a deeper commitment to saving lives. Join our community of heroes today.
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-12">
