@@ -28,7 +28,10 @@ const formSchema = z.object({
   condition: z.string().min(5, { message: 'Please provide a brief description of the medical condition.' }),
   story: z.string().min(100, { message: 'Your story must be at least 100 characters long.' }),
   goal: z.coerce.number().positive({ message: 'Funding goal must be a positive number.' }),
-  documents: z.instanceof(FileList).optional(),
+  documents: (typeof window !== 'undefined'
+  ? z.instanceof(FileList).optional()
+  : z.any().optional()),
+
 });
 
 export function RequestForm() {
