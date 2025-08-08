@@ -4,6 +4,7 @@ import { cases } from '@/lib/data';
 import { Filter } from 'lucide-react';
 import Image from 'next/image';
 import { DonationImpact } from '@/components/donation-impact';
+import { DonorRewards } from '@/components/donor-rewards';
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
           </div>
         </section>
         <DonationImpact />
+        <DonorRewards />
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-start space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
