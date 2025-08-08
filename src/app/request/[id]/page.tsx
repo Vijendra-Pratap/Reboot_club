@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { DollarSign, MapPin, Tag } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
+import Image from 'next/image';
 
 export default function RequestDetailPage({ params }: { params: { id: string } }) {
   const caseData = cases.find((c) => c.id === params.id);
@@ -25,7 +26,20 @@ export default function RequestDetailPage({ params }: { params: { id: string } }
   return (
     <div className="container mx-auto max-w-5xl py-8 md:py-12">
       <div className="grid md:grid-cols-3 gap-8">
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 space-y-6">
+           {caseData.imageUrl && (
+            <Card className="overflow-hidden">
+                <div className="relative aspect-video">
+                    <Image 
+                        src={caseData.imageUrl} 
+                        alt={caseData.condition} 
+                        fill
+                        className="object-cover"
+                        data-ai-hint={caseData.dataAiHint}
+                    />
+                </div>
+            </Card>
+          )}
           <Card className="overflow-hidden">
             <CardHeader>
               <Badge variant="secondary" className="w-fit mb-2">{caseData.condition}</Badge>

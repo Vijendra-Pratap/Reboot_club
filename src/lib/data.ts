@@ -6,6 +6,8 @@ export type Case = {
     location: string;
     goal: number;
     raised: number;
+    imageUrl?: string;
+    dataAiHint?: string;
   };
   
   export const cases: Case[] = [
@@ -17,6 +19,8 @@ export type Case = {
       location: 'New York, NY',
       goal: 50000,
       raised: 22500,
+      imageUrl: 'https://static.vecteezy.com/system/resources/previews/002/296/458/original/leukemia-blood-cancer-all-types-of-blood-cells-are-seen-in-the-blood-test-and-also-show-the-differences-of-normal-blood-vector.jpg',
+      dataAiHint: 'leukemia blood cells',
     },
     {
       id: '2',
@@ -82,4 +86,3 @@ export type Case = {
       raised: 11000,
     },
   ];
-  
