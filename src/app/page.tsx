@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { DonationImpact } from '@/components/donation-impact';
 import { DonorRewards } from '@/components/donor-rewards';
 import { MedicalHistory } from '@/components/medical-history';
+import { HealthcareDisparityChart } from '@/components/healthcare-disparity-chart';
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
         <DonationImpact />
         <DonorRewards />
         <MedicalHistory />
+        <HealthcareDisparityChart />
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-start space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
