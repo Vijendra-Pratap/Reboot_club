@@ -19,8 +19,8 @@ export type Case = {
       location: 'New York, NY',
       goal: 50000,
       raised: 22500,
-      imageUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=400&fit=crop',
-      dataAiHint: 'woman portrait',
+      imageUrl: 'https://images.unsplash.com/photo-1579154204601-01588f3a38d8?w=600&h=400&fit=crop',
+      dataAiHint: 'blood cells',
     },
     {
       id: '2',
