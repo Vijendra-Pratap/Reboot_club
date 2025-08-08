@@ -19,8 +19,8 @@ export type Case = {
       location: 'New York, NY',
       goal: 50000,
       raised: 22500,
-      imageUrl: 'https://images.unsplash.com/photo-1579154204601-01588f3a38d8?w=600&h=400&fit=crop',
-      dataAiHint: 'blood cells',
+      imageUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop',
+      dataAiHint: 'woman doctor',
     },
     {
       id: '2',
@@ -30,7 +30,7 @@ export type Case = {
       location: 'Chicago, IL',
       goal: 75000,
       raised: 15000,
-      imageUrl: 'https://images.unsplash.com/photo-1526382925646-27b5eb867962?w=600&h=400&fit=crop',
+      imageUrl: 'https://images.unsplash.com/photo-1551833775-24e64f727f32?w=600&h=400&fit=crop',
       dataAiHint: 'elderly man',
     },
     {
@@ -41,8 +41,8 @@ export type Case = {
       location: 'Los Angeles, CA',
       goal: 30000,
       raised: 25000,
-      imageUrl: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&h=400&fit=crop',
-      dataAiHint: 'young student',
+      imageUrl: 'https://images.unsplash.com/photo-1549476464-37392241ea94?w=600&h=400&fit=crop',
+      dataAiHint: 'physical therapy',
     },
     {
       id: '4',
@@ -52,8 +52,8 @@ export type Case = {
       location: 'Houston, TX',
       goal: 120000,
       raised: 95000,
-      imageUrl: 'https://images.unsplash.com/photo-1546015720-6f85e0c4542d?w=600&h=400&fit=crop',
-      dataAiHint: 'newborn baby',
+      imageUrl: 'https://images.unsplash.com/photo-1560285026-3453c5897304?w=600&h=400&fit=crop',
+      dataAiHint: 'baby hospital',
     },
      {
       id: '5',
@@ -63,8 +63,8 @@ export type Case = {
       location: 'Phoenix, AZ',
       goal: 60000,
       raised: 30000,
-      imageUrl: 'https://images.unsplash.com/photo-1573166953820-3c6c4c1a35a2?w=600&h=400&fit=crop',
-      dataAiHint: 'male teacher',
+      imageUrl: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&h=400&fit=crop',
+      dataAiHint: 'hospital patient',
     },
     {
       id: '6',
@@ -74,8 +74,8 @@ export type Case = {
       location: 'Miami, FL',
       goal: 25000,
       raised: 5000,
-      imageUrl: 'https://images.unsplash.com/photo-1502423429699-34763948a0a3?w=600&h=400&fit=crop',
-      dataAiHint: 'female artist',
+      imageUrl: 'https://images.unsplash.com/photo-1590353985784-d621c1a96752?w=600&h=400&fit=crop',
+      dataAiHint: 'woman medication',
     },
     {
       id: '7',
@@ -96,8 +96,8 @@ export type Case = {
       location: 'Seattle, WA',
       goal: 45000,
       raised: 11000,
-      imageUrl: 'https://images.unsplash.com/photo-1519766369419-e3ab2bde3553?w=600&h=400&fit=crop',
-      dataAiHint: 'young girl',
+      imageUrl: 'https://images.unsplash.com/photo-1579222248553-c155d13aa8d7?w=600&h=400&fit=crop',
+      dataAiHint: 'child surgery',
     },
   ];
   
