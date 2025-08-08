@@ -8,6 +8,7 @@ export type Case = {
     raised: number;
     imageUrl?: string;
     dataAiHint?: string;
+    treatmentSuccessRate: number;
   };
   
   export const cases: Case[] = [
@@ -21,6 +22,7 @@ export type Case = {
       raised: 22500,
       imageUrl: 'https://images.unsplash.com/photo-1578496479533-324741678622?w=600&h=400&fit=crop',
       dataAiHint: 'medical consultation',
+      treatmentSuccessRate: 85,
     },
     {
       id: '2',
@@ -31,7 +33,8 @@ export type Case = {
       goal: 75000,
       raised: 15000,
       imageUrl: 'https://images.unsplash.com/photo-1581093452839-a781a5f64344?w=600&h=400&fit=crop',
-      dataAiHint: 'heart surgery'
+      dataAiHint: 'heart surgery',
+      treatmentSuccessRate: 90,
     },
     {
       id: '3',
@@ -42,7 +45,8 @@ export type Case = {
       goal: 30000,
       raised: 25000,
       imageUrl: 'https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&h=400&fit=crop',
-      dataAiHint: 'accident recovery'
+      dataAiHint: 'accident recovery',
+      treatmentSuccessRate: 75,
     },
     {
       id: '4',
@@ -53,7 +57,8 @@ export type Case = {
       goal: 120000,
       raised: 95000,
       imageUrl: 'https://images.unsplash.com/photo-1546015720-6f85e0c4542d?w=600&h=400&fit=crop',
-      dataAiHint: 'newborn baby'
+      dataAiHint: 'newborn baby',
+      treatmentSuccessRate: 88,
     },
      {
       id: '5',
@@ -64,7 +69,8 @@ export type Case = {
       goal: 60000,
       raised: 30000,
       imageUrl: 'https://images.unsplash.com/photo-1622253692010-33352f4568d2?w=600&h=400&fit=crop',
-      dataAiHint: 'kidney transplant'
+      dataAiHint: 'kidney transplant',
+      treatmentSuccessRate: 95,
     },
     {
       id: '6',
@@ -75,7 +81,8 @@ export type Case = {
       goal: 25000,
       raised: 5000,
       imageUrl: 'https://images.unsplash.com/photo-1599493356221-a39fac742f4c?w=600&h=400&fit=crop',
-      dataAiHint: 'autoimmune disease'
+      dataAiHint: 'autoimmune disease',
+      treatmentSuccessRate: 80,
     },
     {
       id: '7',
@@ -86,7 +93,8 @@ export type Case = {
       goal: 18000,
       raised: 17500,
       imageUrl: 'https://images.unsplash.com/photo-1519766369419-e3ab2bde3553?w=600&h=400&fit=crop',
-      dataAiHint: 'prosthetic limb'
+      dataAiHint: 'prosthetic limb',
+      treatmentSuccessRate: 98,
     },
     {
       id: '8',
@@ -97,6 +105,7 @@ export type Case = {
       goal: 45000,
       raised: 11000,
       imageUrl: 'https://images.unsplash.com/photo-1628771065518-1d4c382a3c75?w=600&h=400&fit=crop',
-      dataAiHint: 'spinal surgery'
+      dataAiHint: 'spinal surgery',
+      treatmentSuccessRate: 92,
     },
   ];

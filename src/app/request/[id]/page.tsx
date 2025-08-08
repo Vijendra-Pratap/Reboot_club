@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { DollarSign, MapPin, Tag } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
-import Image from 'next/image';
+import { SuccessRateChart } from '@/components/success-rate-chart';
 
 export default function RequestDetailPage({ params }: { params: { id: string } }) {
   const caseData = cases.find((c) => c.id === params.id);
@@ -27,19 +27,6 @@ export default function RequestDetailPage({ params }: { params: { id: string } }
     <div className="container mx-auto max-w-5xl py-8 md:py-12">
       <div className="grid md:grid-cols-3 gap-8">
         <div className="md:col-span-2 space-y-6">
-           {caseData.imageUrl && (
-            <Card className="overflow-hidden">
-                <div className="relative aspect-video">
-                    <Image 
-                        src={caseData.imageUrl} 
-                        alt={caseData.condition} 
-                        fill
-                        className="object-cover"
-                        data-ai-hint={caseData.dataAiHint}
-                    />
-                </div>
-            </Card>
-          )}
           <Card className="overflow-hidden">
             <CardHeader>
               <Badge variant="secondary" className="w-fit mb-2">{caseData.condition}</Badge>
@@ -56,6 +43,17 @@ export default function RequestDetailPage({ params }: { params: { id: string } }
         </div>
 
         <div className="md:col-span-1 space-y-6">
+            <Card>
+              <CardHeader>
+                  <CardTitle className="font-headline text-2xl">Treatment Success Rate</CardTitle>
+                  <CardDescription>With proper funding, the outlook is positive.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="p-4">
+                  <SuccessRateChart rate={caseData.treatmentSuccessRate} />
+                </div>
+              </CardContent>
+            </Card>
             <Card>
                 <CardHeader>
                     <CardTitle className="font-headline text-2xl">Donation Progress</CardTitle>

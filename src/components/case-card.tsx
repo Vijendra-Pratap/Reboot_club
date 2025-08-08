@@ -6,23 +6,21 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { Progress } from '@/components/ui/progress';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import Image from 'next/image';
+import { SuccessRateChart } from './success-rate-chart';
 
 interface CaseCardProps {
   caseData: Case;
 }
 
 export function CaseCard({ caseData }: CaseCardProps) {
-  const { id, name, condition, raised, goal, location, imageUrl, dataAiHint } = caseData;
+  const { id, name, condition, raised, goal, location, treatmentSuccessRate } = caseData;
   const progress = Math.round((raised / goal) * 100);
 
   return (
     <Card className="flex flex-col h-full overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl">
-      {imageUrl && (
-        <div className="relative aspect-video">
-            <Image src={imageUrl} alt={condition} fill className="object-cover" data-ai-hint={dataAiHint}/>
-        </div>
-      )}
+      <div className="p-4 bg-muted/20">
+        <SuccessRateChart rate={treatmentSuccessRate} />
+      </div>
       <CardHeader className="p-4">
         <Badge variant="secondary" className="mb-2 w-fit">{location}</Badge>
         <CardTitle className="font-headline text-xl">{condition}</CardTitle>
