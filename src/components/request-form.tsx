@@ -30,7 +30,7 @@ const formSchema = z.object({
   documents: z.any()
     .optional()
     .refine(
-      (files) => typeof window === 'undefined' || !files || (files instanceof FileList && files.length > 0),
+      (files) => typeof window === 'undefined' || (files instanceof FileList && files.length > 0),
       'Please upload at least one document.'
     ),
 });
