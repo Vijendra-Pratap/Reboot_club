@@ -20,7 +20,6 @@ import { useEffect, useState, useTransition } from 'react';
 import { getSimilarRequestSuggestions } from '@/app/actions';
 import { SimilarRequests } from './similar-requests';
 import { useToast } from '@/hooks/use-toast';
-import { Upload } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -28,7 +27,12 @@ const formSchema = z.object({
   condition: z.string().min(5, { message: 'Please provide a brief description of the medical condition.' }),
   story: z.string().min(100, { message: 'Your story must be at least 100 characters long.' }),
   goal: z.coerce.number().positive({ message: 'Funding goal must be a positive number.' }),
-  documents: z.any().optional(),
+  documents: z.any()
+    .optional()
+    .refine(
+      (files) => typeof window === 'undefined' || !files || (files instanceof FileList && files.length > 0),
+      'Please upload at least one document.'
+    ),
 });
 
 export function RequestForm() {
@@ -80,6 +84,9 @@ export function RequestForm() {
       form.reset();
     });
   }
+  
+  const { register } = form;
+
 
   return (
     <Card>
@@ -167,24 +174,20 @@ export function RequestForm() {
                 )}
                 />
                 <FormField
-                  control={form.control}
-                  name="documents"
-                  render={({ field: { value, onChange, ...fieldProps } }) => (
-                    <FormItem>
-                    <FormLabel>Verification Documents</FormLabel>
-                    <FormControl>
-                      <Input 
-                        {...fieldProps}
-                        type="file" 
-                        onChange={(event) => onChange(event.target.files && event.target.files[0])}
-                      />
-                    </FormControl>
-                    <FormDescription>
-                        Upload medical bills, doctor's notes, etc. (PDF, JPG, PNG)
-                    </FormDescription>
-                    <FormMessage />
-                    </FormItem>
-                )}
+                    control={form.control}
+                    name="documents"
+                    render={({ field }) => (
+                        <FormItem>
+                        <FormLabel>Verification Documents</FormLabel>
+                        <FormControl>
+                            <Input type="file" {...register('documents')} />
+                        </FormControl>
+                        <FormDescription>
+                            Upload medical bills, doctor's notes, etc. (PDF, JPG, PNG)
+                        </FormDescription>
+                        <FormMessage />
+                        </FormItem>
+                    )}
                 />
             </div>
 
