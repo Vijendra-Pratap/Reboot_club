@@ -27,8 +27,8 @@ const formSchema = z.object({
   email: z.string().email({ message: 'Please enter a valid email address.' }),
   condition: z.string().min(5, { message: 'Please provide a brief description of the medical condition.' }),
   story: z.string().min(100, { message: 'Your story must be at least 100 characters long.' }),
-  goal: z.coerce.number().positive({ message: 'Funding goal must be a positive number.' 
-  
+  goal: z.coerce.number().positive({ message: 'Funding goal must be a positive number.' }),
+  documents: z.any(),
 });
 
 export function RequestForm() {
