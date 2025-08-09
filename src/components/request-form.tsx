@@ -96,7 +96,7 @@ export function RequestForm() {
                   <FormItem>
                     <FormLabel>Full Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="John Doe" {...field} />
+                      <Input type="text" placeholder="John Doe" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -109,7 +109,7 @@ export function RequestForm() {
                   <FormItem>
                     <FormLabel>Email Address</FormLabel>
                     <FormControl>
-                      <Input placeholder="you@example.com" {...field} />
+                      <Input type="email" placeholder="you@example.com" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -123,7 +123,7 @@ export function RequestForm() {
                 <FormItem>
                   <FormLabel>Medical Condition</FormLabel>
                   <FormControl>
-                    <Input placeholder="e.g., Heart Surgery, Cancer Treatment" {...field} />
+                    <Input type="text" placeholder="e.g., Heart Surgery, Cancer Treatment" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
